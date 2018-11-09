@@ -11,7 +11,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 trait ExceptionTrait{
-    
+
     protected function apiException($request , $e){
 
         if ($this->isModel($e)) {
